@@ -16,7 +16,7 @@ npm install romanize-japanese
 
 ### on a webpage
 
-```javascript
+```html
 <script type=module>
   import * as romanize from './node_modules/romanize-japanese/romanize-japanese.js'
   console.log(romanize.fromKana('みみ')) // outputs "MIMI"
