@@ -22,7 +22,7 @@ npm install romanize-japanese
   console.log(romanize.fromKana('みみ')) // outputs "MIMI"
 </script>
 ```
-*(mention: `node_modules` needs to be publicly accessible from the client)*
+*(note: `node_modules` needs to be publicly accessible from the client)*
 
 ### in a node es module
 
@@ -31,6 +31,7 @@ import * as romanize from 'romanize-japanese'
 
 console.log(romanize.fromKana('みみ')) // outputs "MIMI"
 ```
+*(note: you will need to provide the `--experimental-modules` node flag as ESM are still being experimental)*
 
 ## Known limitations
 
