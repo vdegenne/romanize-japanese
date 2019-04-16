@@ -4,9 +4,8 @@
 <body>
   <div id=result></div>
   <script type="module">
-    import * as romanize from './romanize-japanese.mjs'
-    console.log(romanize);
-    result.innerText = romanize.fromKana('みみ')
+    import romanize from './build/romanize-japanese.mjs'
+    alert(`ありがとありがと　ございます。\n${romanize.fromKana('ありがと　ございます。', true)}`)
   </script>
 </body>
 

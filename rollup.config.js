@@ -4,10 +4,10 @@ import commonjs from 'rollup-plugin-commonjs'
 // import { terser } from 'rollup-plugin-terser'
 
 export default {
-  input: './node_modules/hepburn/lib/hepburn.js',
+  input: 'main.js',
   output: {
-    file: 'romanize-japanese.mjs',
-    format: 'esm'
+    file: './build/romanize-japanese.mjs',
+    format: 'es'
   },
   plugins: [commonjs(), resolve()]
 }

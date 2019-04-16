@@ -1,6 +1,6 @@
 node_modules
 .gitignore
-rollup.config.js
 test.html
 test.mjs
 yarn.lock
+rollup.config.js
