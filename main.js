@@ -23,11 +23,12 @@ const addSpaces = input => {
     if (
       isJapanese(input[i]) &&
       isJapanese(input[i + 1]) &&
-      !smalls.includes(input[i + 1])
+      !smalls.includes(input[i])
     ) {
       spaced += ' '
     }
   }
+  console.log(spaced)
   return spaced
 }
 
