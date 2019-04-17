@@ -28,6 +28,14 @@ const addSpaces = input => {
       spaced += ' '
     }
   }
+
+  /* take care of the dot double consonent separator */
+  spaced = spaced.replace(/(っ|ッ)\../g, m => {
+    const roman = hepburn.fromKana(m.replace('.', '')).split('')
+    roman.splice(1, 0, '.')
+    return roman.join('')
+  })
+
   return spaced
 }
 
