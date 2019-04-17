@@ -28,7 +28,6 @@ const addSpaces = input => {
       spaced += ' '
     }
   }
-  console.log(spaced)
   return spaced
 }
 
